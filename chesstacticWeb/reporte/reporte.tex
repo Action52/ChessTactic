@@ -1,0 +1,65 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc} 
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+
+\title{Reporte Técnico}
+\author{Luis Alfredo León Villapún}
+
+\begin{document}
+	\pagenumbering{gobble}
+	\maketitle
+	\newpage
+	\pagenumbering{arabic}
+	
+	\tableofcontents
+	\newpage
+	
+	\section{Introducción}
+	Dentro del marco del curso de Desarrollo Web del ITESM Campus Puebla, se nos requirió hacer como proyecto final una plataforma web con temática a elegir.
+	\linebreak
+	La temática elegida para el proyecto fue una página de ajedrez. La idea en general es la de tener una página que fomente el ajedrez y su aprendizaje en el mundo.
+	\linebreak
+	Se consideraron cuatro grandes secciones para la aplicación: 
+	\linebreak
+	En primer lugar, la sección de tácticas, que consiste en crear instancias de tácticas de ajedrez, las cuales son muy útiles para el desarrollo cognitivo y la creatividad al jugar.
+	\linebreak
+	En segundo lugar, la sección de biografías, la cual contiene información y semblanzas de distintos jugadores que han marcado un impacto en el desarrollo del juego.
+	\linebreak
+	En tercer lugar, la sección de blogs, en donde la intención es que los usuarios compartan artículos de interés sobre el ajedrez.
+	\linebreak
+	En cuarto lugar, la sección de aperturas. Aquí se busca enseñar a los visitantes a la página sobre las diferentes aperturas que existen en el juego.
+	\linebreak
+	Así, se concibió un proyecto viable e interesante, que cumple con los objetivos del curso.
+			
+	
+	\section{Web Services}
+	
+	Para los Web Services de la aplicación, se decidió utilizar la plataforma de Google: GCloud.
+	\linebreak
+	GCloud, son los servicios en la nube de Google. Estos servicios proveen al usuario de varias opciones al momento de desarrollar algo, como por ejemplo, gestionar mapas con Google Maps (no utilizados en esta aplicación). También se utiliza para subir archivos y básicamente tener en la nube todo lo necesario para que el servicio que uno desarrolla corra adecuadamente, incluyendo la gestión de imágenes, videos, etc.
+	
+	
+	\section{Lenguaje usado}
+	Para el desarrollo del backend se decidió usar el lenguaje Python. En este caso se tuvo crear un environment que corriera la versión 2.7 de Python, ya que la computadora donde se desarrolló el proyecto tenía la versión 3.6 del mismo.
+	\linebreak
+	Para el desarrollo del frontend, se utilizaron los lenguajes clásicos para la programación web: HTML, CSS, y Javascript.
+	
+	
+	\section{Base de Datos}
+	En la base de datos, se utilizó la base Ndb (NOSQL) que ofrece Google Cloud, la cual es muy útil ya que es muy fácil de usar.
+	\linebreak
+	En este caso, se definió un archivo llamado models.py, en donde se definen las entidades de la base de datos. Cualquier operación sobre la base de datos utiliza las clases creadas en este archivo para  hacer las operaciones normales de CRUD.
+	\linebreak
+	Cabe resaltar que aquí solo se guardan los urls de las imágenes que se suben, ya que las imágenes quedan respaldadas en gcloudstorage.
+	
+	
+	\section{Tecnologías cliente}
+	Las tecnologías cliente utilizadas son básicamente HTML, CSS, y Javascript. Se tomó como ayuda para estos dos últimos el framework Bootstrap, lo cual facilita la creación de sitios web responsivos.
+	\linebreak
+	En el caso de Javascript, cada entidad cuenta con un archivo .js, el cual se encarga de conectar la aplicación. 
+
+\end{document}
